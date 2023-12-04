@@ -1,0 +1,20 @@
+﻿TRPZ_Kurs
+
+
+winexe
+C#
+.cs
+C:\Users\rofla\Desktop\3 курс\ТРПЗ\TRPZ_Kurs\TRPZ_Kurs\obj\Debug\net7.0-windows\
+TRPZ_Kurs
+none
+false
+TRACE;DEBUG;NET;NET7_0;NETCOREAPP
+C:\Users\rofla\Desktop\3 курс\ТРПЗ\TRPZ_Kurs\TRPZ_Kurs\App.xaml
+11-851201223
+
+17-291961374
+199763566023
+AdminLogic\WelcomeAdminWindow.xaml;AuthenticationWindow.xaml;ProfessorLogic\GradeStudentsWindow.xaml;ProfessorLogic\ManageSchedule.xaml;ProfessorLogic\ScheduleProfessorWindow.xaml;ProfessorLogic\WelcomeProfessorWindow.xaml;StudentLogic\AskQuestionWindow.xaml;StudentLogic\EditPersonalDataWindow.xaml;StudentLogic\GradesWindow.xaml;StudentLogic\ScheduleStudentWindow.xaml;StudentLogic\WelcomeStudentWindow.xaml;
+
+False
+

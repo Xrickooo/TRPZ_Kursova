@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net7.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Page Update="StudentLogic\AskQuestionWindow.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="StudentLogic\EditPersonalDataWindow.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="StudentLogic\GradesWindow.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="StudentLogic\ScheduleStudentWindow.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="StudentLogic\WelcomeStudentWindow.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="ProfessorLogic\WelcomeProfessorWindow.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="AdminLogic\QuestionsTabItem.cs">
+        <DependentUpon>WelcomeAdminWindow.xaml</DependentUpon>
+      </Compile>
+      <Compile Update="AdminLogic\ReportTabItem.cs">
+        <DependentUpon>WelcomeAdminWindow.xaml</DependentUpon>
+      </Compile>
+      <Compile Update="AdminLogic\SubjectTabItem.cs">
+        <DependentUpon>WelcomeAdminWindow.xaml</DependentUpon>
+      </Compile>
+      <Compile Update="AdminLogic\ScheduleItemTab.cs">
+        <DependentUpon>WelcomeAdminWindow.xaml</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,30 @@
+﻿<Window x:Class="TRPZ_Kurs.EditPersonalDataWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Edit Personal Data" Height="600" Width="400">
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBlock Text="Personal Data Editor" FontWeight="Bold" FontSize="18" HorizontalAlignment="Center"/>
+            <StackPanel Margin="0,20">
+                <Label Content="Enter new Password" HorizontalAlignment="Center"/>
+                <TextBox x:Name="PasswordTextBox" Margin="0,5" Width="200" Height="30"/>
+            </StackPanel>
+            <StackPanel Margin="0,20">
+                <Label Content="Enter new Address" HorizontalAlignment="Center"/>
+                <TextBox x:Name="AddressTextBox" Margin="0,5" Width="200" Height="30"/>
+            </StackPanel>
+            <StackPanel Margin="0,20">
+                <Label Content="Enter new Phone" HorizontalAlignment="Center"/>
+                <TextBox x:Name="PhoneTextBox" Margin="0,5" Width="200" Height="30"/>
+            </StackPanel>
+            <StackPanel Margin="0,20">
+                <Label Content="Enter new Email" HorizontalAlignment="Center"/>
+                <TextBox x:Name="EmailTextBox" Margin="0,5" Width="200" Height="30"/>
+            </StackPanel>
+            <Button Content="Save Changes" Click="SaveChanges_Click" HorizontalAlignment="Center" Margin="0,20"/>
+        </StackPanel>
+    </Grid>
+</Window>
+
+
+
