@@ -46,3 +46,4 @@ C:\Users\rofla\Desktop\3 курс\ТРПЗ\TRPZ_Kurs\TRPZ_Kurs\obj\Debug\net7.0-
 C:\Users\rofla\Desktop\3 курс\ТРПЗ\TRPZ_Kurs\TRPZ_Kurs\obj\Debug\net7.0-windows\ProfessorLogic\GradeStudentsWindow.g.cs
 C:\Users\rofla\Desktop\3 курс\ТРПЗ\TRPZ_Kurs\TRPZ_Kurs\obj\Debug\net7.0-windows\AdminLogic\WelcomeAdminWindow.g.cs
 C:\Users\rofla\Desktop\3 курс\ТРПЗ\TRPZ_Kurs\TRPZ_Kurs\obj\Debug\net7.0-windows\AdminLogic\WelcomeAdminWindow.baml
+C:\Users\rofla\Desktop\3 курс\ТРПЗ\TRPZ_Kurs\TRPZ_Kurs\obj\Debug\net7.0-windows\TRPZ_Kurs.sourcelink.json

@@ -31,7 +31,7 @@ BEGIN
     FROM inserted;
 END;
 
-CREATE TRIGGER InsertGradesOnScheduleInsert
+create TRIGGER InsertGradesOnScheduleInsert
 ON Schedule
 AFTER INSERT
 AS
@@ -49,19 +49,9 @@ BEGIN
     END
 END;
 
-CREATE TRIGGER UpdateGradesOnNewStudent
-ON Students
-AFTER INSERT
-AS
-BEGIN
-    -- Оновлення оцінок для нових студентів
-    INSERT INTO Grades (StudentID, SubjectID, Grade)
-    SELECT DISTINCT inserted.StudentID, Schedule.SubjectID, 0
-    FROM inserted
-    INNER JOIN Schedule ON Schedule.GroupID = inserted.GroupID
-    LEFT JOIN Grades g ON g.StudentID = inserted.StudentID AND g.SubjectID = Schedule.SubjectID
-    WHERE g.GradeID IS NULL;
-END;
+
+
+
 
 
 

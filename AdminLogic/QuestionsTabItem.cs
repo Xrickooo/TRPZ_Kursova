@@ -31,7 +31,7 @@ namespace TRPZ_Kurs.AdminLogic
             }
         }
 
-        private void UpdateAnswer()
+        private void UpdateAnswer(int adminId)
         {
             try
             {
@@ -46,10 +46,11 @@ namespace TRPZ_Kurs.AdminLogic
                         connection.Open();
 
                         string query =
-                            "UPDATE StudentQuestions SET AnswerText = @AnswerText, DateAnswered = GETDATE() WHERE QuestionID = @QuestionID";
+                            "UPDATE StudentQuestions SET AnswerText = @AnswerText, DateAnswered = GETDATE(), AdministratorID = @AdministratorID WHERE QuestionID = @QuestionID";
                         SqlCommand command = new SqlCommand(query, connection);
                         command.Parameters.AddWithValue("@AnswerText", answerText);
                         command.Parameters.AddWithValue("@QuestionID", questionId);
+                        command.Parameters.AddWithValue("@AdministratorID", adminId);
 
                         int rowsAffected = command.ExecuteNonQuery();
                         if (rowsAffected > 0)

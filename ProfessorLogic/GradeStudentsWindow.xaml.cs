@@ -160,49 +160,55 @@ namespace TRPZ_Kurs.ProfessorLogic
 
         private void UpdateStudentGrade(int studentId, int subjectId, int newGrade)
         {
-            string query = @"
-        IF EXISTS (SELECT 1 FROM Grades WHERE StudentID = @StudentID AND SubjectID = @SubjectID)
-        BEGIN
-            UPDATE Grades
-            SET Grade = @NewGrade
-            WHERE StudentID = @StudentID AND SubjectID = @SubjectID
-        END
-        ELSE
-        BEGIN
-            INSERT INTO Grades (StudentID, SubjectID, Grade)
-            VALUES (@StudentID, @SubjectID, @NewGrade)
-        END
-    ";
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            // Перевірка чи оцінка в діапазоні від 0 до 100
+            if (newGrade >= 0 && newGrade <= 100)
             {
-                SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@StudentID", studentId);
-                command.Parameters.AddWithValue("@SubjectID", subjectId);
-                command.Parameters.AddWithValue("@NewGrade", newGrade);
+                string query = @"
+            IF EXISTS (SELECT 1 FROM Grades WHERE StudentID = @StudentID AND SubjectID = @SubjectID)
+            BEGIN
+                UPDATE Grades
+                SET Grade = @NewGrade
+                WHERE StudentID = @StudentID AND SubjectID = @SubjectID
+            END
+            ELSE
+            BEGIN
+                INSERT INTO Grades (StudentID, SubjectID, Grade)
+                VALUES (@StudentID, @SubjectID, @NewGrade)
+            END
+        ";
 
-                try
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    connection.Open();
-                    int rowsAffected = command.ExecuteNonQuery();
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@StudentID", studentId);
+                    command.Parameters.AddWithValue("@SubjectID", subjectId);
+                    command.Parameters.AddWithValue("@NewGrade", newGrade);
 
-                    if (rowsAffected > 0)
+                    try
                     {
-                        MessageBox.Show("Grade updated successfully.");
+                        connection.Open();
+                        int rowsAffected = command.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Grade updated successfully.");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed to update grade.");
+                        }
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        MessageBox.Show("Failed to update grade.");
+                        MessageBox.Show("Error: " + ex.Message);
                     }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: " + ex.Message);
                 }
             }
+            else
+            {
+                MessageBox.Show("Grade should be between 0 and 100.");
+            }
         }
-
-
 
     }
     public class StudentGrade

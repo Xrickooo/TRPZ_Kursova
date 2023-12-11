@@ -43,7 +43,7 @@ namespace TRPZ_Kurs.AdminLogic
 
         private void SubmitAnswer_Click(object sender, RoutedEventArgs e)
         {
-            UpdateAnswer();
+            UpdateAnswer(userId);
             LoadQuestions(); 
         }
         

@@ -30,7 +30,7 @@ namespace TRPZ_Kurs.ProfessorLogic
 
         private void LoadDaysOfWeek()
         {
-            List<string> daysOfWeek = new List<string> { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
+            List<string> daysOfWeek = new List<string> { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
             DayDropDown.ItemsSource = daysOfWeek;
         }
 

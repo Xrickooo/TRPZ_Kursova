@@ -47,7 +47,32 @@ VALUES
     (2, 'Bob', 'Smith', '1997-08-15', '456 Elm St', '987-654-3210', 'bob@example.com', 2),
     (3, 'Eva', 'Brown', '1999-02-20', '789 Oak St', '111-222-3333', 'eva@example.com', 3),
     (4, 'Max', 'Taylor', '1996-11-25', '101 Pine St', '444-555-6666', 'max@example.com', 4),
-    (5, 'Sophia', 'Lee', '2000-07-05', '202 Maple St', '777-888-9999', 'sophia@example.com', 5);
+    (5, 'Sophia', 'Lee', '2000-07-05', '202 Maple St', '777-888-9999', 'sophia@example.com', 5),
+	    (6, 'Oliver', 'Martinez', '1997-03-15', '123 Oak St', '555-111-2222', 'oliver@example.com', 2),
+    (7, 'Charlotte', 'Garcia', '1998-07-25', '456 Elm St', '555-333-4444', 'charlotte@example.com', 3),
+    (8, 'Mia', 'Lopez', '1999-12-10', '789 Pine St', '555-555-6666', 'mia@example.com', 4),
+    (9, 'Amelia', 'Hernandez', '2000-01-20', '101 Cedar St', '555-777-8888', 'amelia@example.com', 5),
+    (10, 'Harper', 'Gonzalez', '1996-05-05', '202 Maple St', '555-999-0000', 'harper@example.com', 1),
+    (11, 'Liam', 'Rodriguez', '1997-09-12', '303 Oak St', '555-111-3333', 'liam@example.com', 2),
+    (12, 'Evelyn', 'Perez', '1998-11-18', '404 Elm St', '555-222-4444', 'evelyn@example.com', 3),
+    (13, 'Aiden', 'Sanchez', '1999-04-30', '505 Pine St', '555-333-5555', 'aiden@example.com', 4),
+    (14, 'Lucas', 'Torres', '2000-08-06', '606 Cedar St', '555-444-6666', 'lucas@example.com', 5),
+    (15, 'Avery', 'Ramirez', '1996-02-19', '707 Maple St', '555-555-7777', 'avery@example.com', 1),
+    (16, 'Ella', 'Gomez', '1997-06-22', '808 Oak St', '555-666-8888', 'ella@example.com', 2),
+    (17, 'Jackson', 'Diaz', '1998-10-28', '909 Elm St', '555-777-9999', 'jackson@example.com', 3),
+    (18, 'Scarlett', 'Nguyen', '1999-12-02', '1010 Pine St', '555-888-0000', 'scarlett@example.com', 4),
+    (19, 'Mason', 'Kim', '2000-04-14', '1111 Cedar St', '555-999-1111', 'mason@example.com', 5),
+    (20, 'Luna', 'Singh', '1996-08-18', '1212 Maple St', '555-000-2222', 'luna@example.com', 1),
+    (21, 'Mateo', 'Patel', '1997-01-21', '1313 Oak St', '555-111-3333', 'mateo@example.com', 2),
+    (22, 'Penelope', 'Lee', '1998-07-03', '1414 Elm St', '555-222-4444', 'penelope@example.com', 3),
+    (23, 'Riley', 'Wong', '1999-11-10', '1515 Pine St', '555-333-5555', 'riley@example.com', 4),
+    (24, 'Grace', 'Ali', '2000-05-20', '1616 Cedar St', '555-444-6666', 'grace@example.com', 5),
+    (25, 'Zoey', 'Kumar', '1996-03-30', '1717 Maple St', '555-555-7777', 'zoey@example.com', 1),
+    (26, 'Asher', 'Chen', '1997-09-09', '1818 Oak St', '555-666-8888', 'asher@example.com', 2),
+    (27, 'Ellie', 'Sharma', '1998-11-17', '1919 Elm St', '555-777-9999', 'ellie@example.com', 3),
+    (28, 'Bennett', 'Rao', '1999-05-25', '2020 Pine St', '555-888-0000', 'bennett@example.com', 4),
+    (29, 'Nova', 'Das', '2000-08-08', '2121 Cedar St', '555-999-1111', 'nova@example.com', 5),
+    (30, 'Hudson', 'Amin', '1996-02-12', '2222 Maple St', '555-000-2222', 'hudson@example.com', 1);
 
 -- Додавання записів до таблиці Professors
 INSERT INTO Professors (ProfessorID, FirstName, LastName, Title)
@@ -100,42 +125,3 @@ VALUES
     (3, 3, 'I need help with the Economics assignment.', '2023-03-10 11:45:00', 'Sure, let’s schedule a meeting to discuss it.', '2023-03-11 13:00:00'),
     (4, 4, 'Is there any additional reading for the Literature class?', '2023-04-05 10:00:00', 'Yes, there are supplementary materials on the course webpage.', '2023-04-06 09:15:00'),
     (5, 5, 'Can I get extra resources for Physics?', '2023-05-12 13:20:00', 'Certainly, I will email you additional study materials.', '2023-05-13 15:45:00');
-
-
-	-- Добавление записей в таблицу Students
-INSERT INTO Students (StudentID, FirstName, LastName, DateOfBirth, Address, Phone, Email, GroupID)
-VALUES
-    (6, 'Oliver', 'Martinez', '1997-03-15', '123 Oak St', '555-111-2222', 'oliver@example.com', 2),
-    (7, 'Charlotte', 'Garcia', '1998-07-25', '456 Elm St', '555-333-4444', 'charlotte@example.com', 3),
-    (8, 'Mia', 'Lopez', '1999-12-10', '789 Pine St', '555-555-6666', 'mia@example.com', 4),
-    (9, 'Amelia', 'Hernandez', '2000-01-20', '101 Cedar St', '555-777-8888', 'amelia@example.com', 5),
-    (10, 'Harper', 'Gonzalez', '1996-05-05', '202 Maple St', '555-999-0000', 'harper@example.com', 1),
-    (11, 'Liam', 'Rodriguez', '1997-09-12', '303 Oak St', '555-111-3333', 'liam@example.com', 2),
-    (12, 'Evelyn', 'Perez', '1998-11-18', '404 Elm St', '555-222-4444', 'evelyn@example.com', 3),
-    (13, 'Aiden', 'Sanchez', '1999-04-30', '505 Pine St', '555-333-5555', 'aiden@example.com', 4),
-    (14, 'Lucas', 'Torres', '2000-08-06', '606 Cedar St', '555-444-6666', 'lucas@example.com', 5),
-    (15, 'Avery', 'Ramirez', '1996-02-19', '707 Maple St', '555-555-7777', 'avery@example.com', 1),
-    (16, 'Ella', 'Gomez', '1997-06-22', '808 Oak St', '555-666-8888', 'ella@example.com', 2),
-    (17, 'Jackson', 'Diaz', '1998-10-28', '909 Elm St', '555-777-9999', 'jackson@example.com', 3),
-    (18, 'Scarlett', 'Nguyen', '1999-12-02', '1010 Pine St', '555-888-0000', 'scarlett@example.com', 4),
-    (19, 'Mason', 'Kim', '2000-04-14', '1111 Cedar St', '555-999-1111', 'mason@example.com', 5),
-    (20, 'Luna', 'Singh', '1996-08-18', '1212 Maple St', '555-000-2222', 'luna@example.com', 1),
-    (21, 'Mateo', 'Patel', '1997-01-21', '1313 Oak St', '555-111-3333', 'mateo@example.com', 2),
-    (22, 'Penelope', 'Lee', '1998-07-03', '1414 Elm St', '555-222-4444', 'penelope@example.com', 3),
-    (23, 'Riley', 'Wong', '1999-11-10', '1515 Pine St', '555-333-5555', 'riley@example.com', 4),
-    (24, 'Grace', 'Ali', '2000-05-20', '1616 Cedar St', '555-444-6666', 'grace@example.com', 5),
-    (25, 'Zoey', 'Kumar', '1996-03-30', '1717 Maple St', '555-555-7777', 'zoey@example.com', 1),
-    (26, 'Asher', 'Chen', '1997-09-09', '1818 Oak St', '555-666-8888', 'asher@example.com', 2),
-    (27, 'Ellie', 'Sharma', '1998-11-17', '1919 Elm St', '555-777-9999', 'ellie@example.com', 3),
-    (28, 'Bennett', 'Rao', '1999-05-25', '2020 Pine St', '555-888-0000', 'bennett@example.com', 4),
-    (29, 'Nova', 'Das', '2000-08-08', '2121 Cedar St', '555-999-1111', 'nova@example.com', 5),
-    (30, 'Hudson', 'Amin', '1996-02-12', '2222 Maple St', '555-000-2222', 'hudson@example.com', 1);
-
-
-	-- Добавление записей оценок для новых студентов
-
-
-
-	INSERT INTO Groups (GroupID, GroupName, Course, FacultyID)
-VALUES
-    (6, 'ENG1333', 5, 5);
